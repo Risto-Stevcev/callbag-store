@@ -1,0 +1,27 @@
+{
+  "name": "callbag-store",
+  "version": "1.0.0",
+  "description": "A callbag implementation of a redux-like store",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Risto-Stevcev/callbag-store.git"
+  },
+  "keywords": [
+    "callbag"
+  ],
+  "author": "Risto Stevcev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Risto-Stevcev/callbag-store/issues"
+  },
+  "homepage": "https://github.com/Risto-Stevcev/callbag-store#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "callbag-basics": "^3.0.0",
+    "tape": "^4.9.0"
+  }
+}
