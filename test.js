@@ -3,7 +3,7 @@ const test = require('tape')
 const createStore = require('./index')
 
 test('store', t => {
-  const { dispatch, store } = createStore((state, action) => {
+  const { dispatch, store, getState } = createStore((state, action) => {
     switch (action.type) {
       case 'SET_FOOBAR':
         return { foobar: state.foobar + action.foobar }
@@ -24,4 +24,6 @@ test('store', t => {
 
   dispatch({ type: 'SET_FOOBAR', foobar: 3 })
   dispatch({ type: 'SET_FOOBAR', foobar: 7 })
+
+  t.deepEqual(getState(), { foobar: 11 })
 })

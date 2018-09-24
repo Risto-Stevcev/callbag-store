@@ -3,6 +3,7 @@ const createStore = (reducer, initialState) => {
   var listeners = []
 
   return {
+    getState: () => state,
     dispatch: action => {
       state = reducer(state, action)
       listeners.forEach(listener => listener())
