@@ -1,6 +1,6 @@
 {
   "name": "callbag-store",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A callbag implementation of a redux-like store",
   "main": "index.js",
   "scripts": {
