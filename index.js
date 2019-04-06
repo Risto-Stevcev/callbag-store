@@ -1,4 +1,4 @@
-const createStore = (reducer, initialState) => {
+exports.createStore = (reducer, initialState) => {
   var state = initialState
   var listeners = []
 
@@ -19,5 +19,3 @@ const createStore = (reducer, initialState) => {
     }
   }
 }
-
-module.exports = createStore

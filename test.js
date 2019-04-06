@@ -1,6 +1,6 @@
 const {pipe, scan, skip, forEach} = require('callbag-basics')
 const test = require('tape')
-const createStore = require('./index')
+const {createStore} = require('./index')
 
 test('store', t => {
   const { dispatch, store, getState } = createStore((state, action) => {
