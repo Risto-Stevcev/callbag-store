@@ -7,6 +7,7 @@ A callbag implementation of a redux-like store
 ## example
 
 ```js
+const {createStore} = require('callbag-store')
 const observe = require('callbag-observe')
 
 const { dispatch, store } = createStore((state, action) => {
